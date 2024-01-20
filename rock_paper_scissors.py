@@ -44,7 +44,9 @@ while True:
         counter_lose += 1
         print('You lose!')
     print()
-
-print(f'Win: {counter_win}')
-print(f'Draw: {counter_draw}')
-print(f'Lose: {counter_lose}')
+def prRed(skk): print("\033[91m {}\033[00m" .format(skk))
+def prGreen(skk): print("\033[92m {}\033[00m" .format(skk))
+def prYellow(skk): print("\033[93m {}\033[00m" .format(skk))
+prRed(f'Win: {counter_win}')
+prGreen(f'Draw: {counter_draw}')
+prYellow(f'Lose: {counter_lose}')
